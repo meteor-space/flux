@@ -9,13 +9,15 @@ Package.onUse(function(api) {
 
   api.versionsFrom('1.2.0.1');
 
+  api.imply('space:ui@6.0.0', 'client');
+
   api.use([
     'underscore',
     'ecmascript',
     'space:base@4.0.1',
     'space:messaging@3.0.1',
     'space:ui@6.0.0'
-  ]);
+  ], 'client');
 
   api.addFiles([
     'source/module.js',
@@ -35,7 +37,7 @@ Package.onTest(function(api) {
     'space:ui@6.0.0',
     'space:testing@3.0.1',
     'space:testing-flux@0.7.0'
-  ]);
+  ], 'client');
 
   api.addFiles([
     'tests/store.tests.js'
