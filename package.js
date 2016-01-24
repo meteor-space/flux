@@ -12,8 +12,8 @@ Package.onUse(function(api) {
   api.use([
     'underscore',
     'ecmascript',
-    'space:base@4.0.0',
-    'space:messaging@3.0.0',
+    'space:base@4.0.1',
+    'space:messaging@3.0.1',
     'space:ui@6.0.0'
   ]);
 
@@ -31,7 +31,7 @@ Package.onTest(function(api) {
     'ecmascript',
     'space:flux',
     'practicalmeteor:munit@2.1.5',
-    'space:base@4.0.0',
+    'space:base@4.0.1',
     'space:ui@6.0.0',
     'space:testing@3.0.1',
     'space:testing-flux@0.7.0'
